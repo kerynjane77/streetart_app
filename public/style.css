@@ -1,0 +1,56 @@
+
+html, body {
+  margin-left: 10px;
+  padding: 0;
+  height: 100%;
+}
+
+/*.simple {
+  width: 500px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+#artpic {
+  display: inline;
+  width: auto;
+  height: 140px;
+/*    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;*/
+}
+
+#map {
+  height: 70%;
+}
+
+h1 {
+  font-family: Helvetica, Arial;
+
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  
+}
+
+li {
+  font-family: Helvetica, Arial;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #6699FF;
+/*    color: gray;*/
+}
+
+a:active {
+    color: #FF66FF;
+}

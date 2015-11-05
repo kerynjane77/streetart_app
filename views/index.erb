@@ -1,0 +1,28 @@
+
+<h1>footscray streetart</h1>
+<h3>list of artworks</h3>
+
+
+<% @art_sites.each do |art_site| %>
+
+  <p>
+    <%= art_site.artist_name %> 
+
+    <span>
+      <img id="artpic" src="<%= art_site.art_photo %>">
+    </span>
+    
+<!-- // if artist url is empty don't show url-->
+    <a href="<%= art_site.artist_url %>">more</a>
+
+  </p>
+
+<% end %>
+
+
+<a href="/art_sites/new">add art site</a>
+
+<!-- display map -->
+
+<div id="map"></div>
+
