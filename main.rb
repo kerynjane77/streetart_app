@@ -1,6 +1,4 @@
-require 'pry'
 require 'sinatra'
-require 'sinatra/reloader'
 require 'pg' # to connect with postgres
 
 require_relative 'db_config'
