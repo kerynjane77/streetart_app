@@ -1,3 +1,4 @@
+
 // create new map object and specific the DOM element for diplay
 // long/lat is Footscray
 
@@ -102,6 +103,12 @@ function initMap() {
 }
 
 initMap();
+
+
+$(document).ready(function() {
+  $(".fancybox").fancybox();
+});
+
 
 
 // Elmz street (unknown location)

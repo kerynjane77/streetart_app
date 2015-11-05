@@ -8,9 +8,9 @@
   <p>
     <%= art_site.artist_name %> 
 
-    <span>
+    <a id='pic1' href="<%= art_site.art_photo %>">
       <img id="artpic" src="<%= art_site.art_photo %>">
-    </span>
+    </a>
     
 <!-- // if artist url is empty don't show url-->
     <a href="<%= art_site.artist_url %>">more</a>

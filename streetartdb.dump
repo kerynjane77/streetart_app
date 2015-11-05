@@ -1,0 +1,102 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: art_sites; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE art_sites (
+    id integer NOT NULL,
+    artist_name character varying(100) NOT NULL,
+    address character varying(400),
+    art_photo character varying(100),
+    artist_url character varying(100)
+);
+
+
+--
+-- Name: art_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE art_sites_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: art_sites_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE art_sites_id_seq OWNED BY art_sites.id;
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY art_sites ALTER COLUMN id SET DEFAULT nextval('art_sites_id_seq'::regclass);
+
+
+--
+-- Data for Name: art_sites; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY art_sites (id, artist_name, address, art_photo, artist_url) FROM stdin;
+6	Baby Guerrilla	376 Barkly Street, Footscray	/img/BG_horse.png	http://babyguerrilla.com/artwork/memoriam
+7	Heesco	48 Albert Street, Footscray	/img/malcolm2.png	http://www.heesco.com/
+8	Elmz Street	Laneway, Footscray	/img/Elmz_street_face.jpg	http://www.rtist.com.au/entourage/elmz-street/
+9	Unknown – Pirate Cat	378 Barkly Street, Footscray	/img/pirate_cat.png	
+5	Baby Guerrilla	VU, 214 Nicholson Street, Footscray	/img/baby_guerrila_VU.jpg	http://babyguerrilla.com/
+\.
+
+
+--
+-- Name: art_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('art_sites_id_seq', 9, true);
+
+
+--
+-- Name: art_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY art_sites
+    ADD CONSTRAINT art_sites_pkey PRIMARY KEY (id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
