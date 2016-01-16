@@ -1,28 +1,41 @@
+<!-- front page displaying thumbnails and location map -->
+
+<a id="map-link" href="#map">show map</a>
 
 <h1>footscray streetart</h1>
-<h3>list of artworks</h3>
+
+<div id="container">
+
+  <div id="art-sites">
+
+    <% @art_sites.each do |art_site| %>
 
 
-<% @art_sites.each do |art_site| %>
+      <div class="box">
 
-  <p>
-    <%= art_site.artist_name %> 
+       <h3 class="art-<%= art_site.id %>"> <%= art_site.artist_name %> </h3>
 
-    <a id='pic1' href="<%= art_site.art_photo %>">
-      <img id="artpic" src="<%= art_site.art_photo %>">
-    </a>
-    
-<!-- // if artist url is empty don't show url-->
-    <a href="<%= art_site.artist_url %>">more</a>
+        <a id="pic1" href="<%= art_site.art_photo %>">
+          <img id="artpic" src="<%= art_site.art_photo %>">
+        </a>
 
-  </p>
+    <!-- // if artist url is empty don't show url-->
 
-<% end %>
+        <a href="<%= art_site.artist_url %>" target="_blank"><p>more</p></a>
+
+      </div>
+
+    <% end %>
 
 
-<a href="/art_sites/new">add art site</a>
+  </div>
 
-<!-- display map -->
+<!--   <a href="/art_sites/new">add art site</a> ** to add new sites ** -->
 
-<div id="map"></div>
+  <!-- display map -->
 
+  <div id="map"></div>
+
+  <a id="link-top" href="#map-link">back to top</a>
+
+</div>

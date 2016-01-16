@@ -1,0 +1,97 @@
+
+html {
+  background: url("/img/Graffiti-wall.jpg") no-repeat center center fixed; 
+  background-size: cover;
+}
+
+/*body {
+  margin: 0 auto;
+}*/
+
+#container{
+   margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+#artpic {
+  width: auto;
+  height: 180px;
+}
+
+#art-sites {
+  margin: 0 auto 25px auto;  
+  width: 80%;
+  text-align: center;
+}
+
+#map {
+  width: 60%;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto 3em auto;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 5em;
+  color: #FF0099;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: Helvetica, Arial;
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.6em;
+}
+
+h3 {
+  font-family: Helvetica, Arial;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #FF6600; /* orange */
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: .4em;
+}
+
+h3:hover {
+  cursor: pointer;
+  color: #CC00CC;
+}
+
+#map-link {
+  font-family: Helvetica, Arial;
+  font-size: 1em;
+  font-weight: bold;
+/*  color: #0066FF;*/
+  float: right;
+}
+
+#link-top {
+  font-family: Helvetica, Arial;
+  font-size: 1em;
+  font-weight: bold;
+  float: right;
+  margin-bottom: 20px;
+}
+
+a {
+  font-family: Helvetica, Arial;
+  color: #CC00CC; /* dark pink */
+}
+
+a:visited {
+    color: #0066FF;  /* mid blue */
+}
+
+a:active {
+    color: gray;
+}
