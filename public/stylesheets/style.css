@@ -83,6 +83,13 @@ h3:hover {
   margin-bottom: 20px;
 }
 
+#add-site {
+  font-family: Helvetica, Arial;
+  font-size: 1em;
+  font-weight: bold;
+  float: right;
+}
+
 a {
   font-family: Helvetica, Arial;
   color: #CC00CC; /* dark pink */
@@ -94,4 +101,27 @@ a:visited {
 
 a:active {
     color: gray;
+}
+
+label {
+  font-family: Helvetica, Arial;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 12%;
+  height: 25px;
+  margin-right: 6px;
+}
+
+button {
+  border: none;
+  background-color: #FF66FF;
+  padding: 5px 20px;
+  font-size: 1em;
 }
