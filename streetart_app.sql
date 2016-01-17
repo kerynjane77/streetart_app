@@ -10,5 +10,5 @@ CREATE TABLE art_sites
 
 );
 
-INSERT INTO art_sites (artist_name, address, art_photo, artist_url) VALUES ('Baby Guerrilla', '70 Barkly Street', '/img/baby_guerrila_VU.jpg', 'www.babyguerrilla.com');
+INSERT INTO art_sites (artist_name, address, art_photo, artist_url) VALUES ('Heesco', 'cnr Hopkins and Shelley Streets, Footscray', '/img/franco_cozzo.jpg', 'https://www.heesco.com');
 

@@ -4,10 +4,6 @@ html {
   background-size: cover;
 }
 
-/*body {
-  margin: 0 auto;
-}*/
-
 #container{
    margin: 0 auto;
 }
@@ -71,7 +67,6 @@ h3:hover {
   font-family: Helvetica, Arial;
   font-size: 1em;
   font-weight: bold;
-/*  color: #0066FF;*/
   float: right;
 }
 
@@ -102,6 +97,8 @@ a:visited {
 a:active {
     color: gray;
 }
+
+/* form - add new site view */
 
 label {
   font-family: Helvetica, Arial;
